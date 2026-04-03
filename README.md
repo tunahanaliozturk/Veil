@@ -13,7 +13,7 @@
   <a href="https://www.nuget.org/packages/Moongazing.Veil"><img src="https://img.shields.io/nuget/v/Moongazing.Veil?style=flat-square&label=NuGet&color=blue" alt="NuGet" /></a>
   <a href="https://www.nuget.org/packages/Moongazing.Veil"><img src="https://img.shields.io/nuget/dt/Moongazing.Veil?style=flat-square&label=Downloads" alt="Downloads" /></a>
   <img src="https://img.shields.io/badge/.NET-8.0%20%7C%209.0%20%7C%2010.0-purple?style=flat-square" alt=".NET 8 / 9 / 10" />
-  <a href="https://github.com/tunahanaliozturk/Moongazing.Veil/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License" /></a>
+  <a href="https://github.com/tunahanaliozturk/Moongazing.Veil/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License" /></a>
   <a href="https://github.com/tunahanaliozturk/Moongazing.Veil/actions"><img src="https://img.shields.io/github/actions/workflow/status/tunahanaliozturk/Moongazing.Veil/ci.yml?style=flat-square&label=Build" alt="Build Status" /></a>
 </p>
 
