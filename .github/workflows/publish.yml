@@ -35,13 +35,13 @@ jobs:
         run: echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_OUTPUT
 
       - name: Pack Moongazing.Veil
-        run: dotnet pack src/Moongazing.Veil/Moongazing.Veil.csproj --no-build --configuration Release /p:PackageVersion=${{ steps.version.outputs.VERSION }} --output ./nupkg
+        run: dotnet pack src/Moongazing.Veil/Moongazing.Veil.csproj --configuration Release /p:PackageVersion=${{ steps.version.outputs.VERSION }} --output ./nupkg
 
       - name: Pack Moongazing.Veil.AspNetCore
-        run: dotnet pack src/Moongazing.Veil.AspNetCore/Moongazing.Veil.AspNetCore.csproj --no-build --configuration Release /p:PackageVersion=${{ steps.version.outputs.VERSION }} --output ./nupkg
+        run: dotnet pack src/Moongazing.Veil.AspNetCore/Moongazing.Veil.AspNetCore.csproj --configuration Release /p:PackageVersion=${{ steps.version.outputs.VERSION }} --output ./nupkg
 
       - name: Pack Moongazing.Veil.Serilog
-        run: dotnet pack src/Moongazing.Veil.Serilog/Moongazing.Veil.Serilog.csproj --no-build --configuration Release /p:PackageVersion=${{ steps.version.outputs.VERSION }} --output ./nupkg
+        run: dotnet pack src/Moongazing.Veil.Serilog/Moongazing.Veil.Serilog.csproj --configuration Release /p:PackageVersion=${{ steps.version.outputs.VERSION }} --output ./nupkg
 
       - name: Push to NuGet
         run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.NUGET }} --source https://api.nuget.org/v3/index.json --skip-duplicate
