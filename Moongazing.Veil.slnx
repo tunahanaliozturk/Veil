@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/Moongazing.Veil.Demo/Moongazing.Veil.Demo.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Moongazing.Veil.AspNetCore/Moongazing.Veil.AspNetCore.csproj" />
+    <Project Path="src/Moongazing.Veil.Serilog/Moongazing.Veil.Serilog.csproj" />
+    <Project Path="src/Moongazing.Veil/Moongazing.Veil.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Moongazing.Veil.Tests/Moongazing.Veil.Tests.csproj" />
+  </Folder>
+</Solution>

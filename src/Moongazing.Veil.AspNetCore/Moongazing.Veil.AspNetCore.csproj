@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <PackageId>Moongazing.Veil.AspNetCore</PackageId>
+    <Description>ASP.NET Core middleware for automatic HTTP request/response PII redaction. Header, body, and query string sanitization powered by Moongazing.Veil.</Description>
+    <PackageTags>masking;redaction;pii;gdpr;aspnetcore;middleware;http;security</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>docs\Moongazing.Veil.AspNetCore.md</PackageReadmeFile>
+    <Version>1.0.0</Version>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\icon.png" Pack="true" PackagePath="" />
+    <None Include="..\..\docs\Moongazing.Veil.AspNetCore.md" Pack="true" PackagePath="docs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Moongazing.Veil\Moongazing.Veil.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>
