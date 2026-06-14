@@ -7,7 +7,6 @@
     <PackageTags>masking;redaction;pii;gdpr;aspnetcore;middleware;http;security</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>docs\Moongazing.Veil.AspNetCore.md</PackageReadmeFile>
-    <Version>1.0.0</Version>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
 

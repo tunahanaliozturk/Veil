@@ -1,0 +1,52 @@
+name: Bug report
+description: Report incorrect masking, a leak, or any other defect
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a report. **If sensitive data leaks through Veil** (a pattern fails to
+        mask, a body is logged raw, a property is not redacted), do **not** file it here — follow
+        [SECURITY.md](../blob/master/SECURITY.md) and report it privately instead.
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      description: Which version of Veil are you on?
+      placeholder: "1.0.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Affected package
+      options:
+        - Moongazing.Veil (core)
+        - Moongazing.Veil.AspNetCore
+        - Moongazing.Veil.Serilog
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime
+      description: Output of `dotnet --info` (TFM is enough).
+      placeholder: ".NET 9.0.x on Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: One DTO or one string, ideally under 50 lines.
+      render: csharp
+    validations:
+      required: true
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: Actual vs expected output
+      description: Paste the actual masked output and the output you expected.
+    validations:
+      required: true

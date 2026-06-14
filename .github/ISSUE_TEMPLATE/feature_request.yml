@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest a new pattern, locale, integration, or capability
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Veil keeps a deliberately small public surface. The bar for new features is "does this
+        make masking clearer, faster, or safer for many users?" Please describe the use case, not
+        just the API you imagine.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: The use case. What data are you trying to mask, and where is it leaking today?
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of feature is this?
+      options:
+        - New built-in pattern
+        - New locale
+        - New integration (logging/HTTP/other)
+        - Configuration / API improvement
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like it to work? Sketch the API or config if you have one in mind.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds you tried, or other libraries that do this.
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I'm willing to send a PR for this.

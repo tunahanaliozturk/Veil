@@ -7,7 +7,6 @@
     <PackageTags>masking;redaction;pii;gdpr;serilog;logging;security;privacy</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>docs\Moongazing.Veil.Serilog.md</PackageReadmeFile>
-    <Version>1.0.0</Version>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
 

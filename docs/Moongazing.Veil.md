@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tunahanaliozturk/Moongazing.Veil/main/logo.png" alt="Moongazing.Veil" width="128" />
+  <img src="https://raw.githubusercontent.com/tunahanaliozturk/Veil/master/logo.png" alt="Moongazing.Veil" width="128" />
 </p>
 
 <h1 align="center">Moongazing.Veil</h1>
@@ -186,4 +186,4 @@ builder.Services.AddVeil(options =>
 
 ## License
 
-[MIT](https://github.com/tunahanaliozturk/Moongazing.Veil/blob/main/LICENSE) -- Copyright (c) Moongazing
+[MIT](https://github.com/tunahanaliozturk/Veil/blob/master/LICENSE) -- Copyright (c) Moongazing

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/tunahanaliozturk/Veil/security/advisories/new
+    about: Report a masking bypass or data leak privately. Do NOT open a public issue.
+  - name: Question or discussion
+    url: https://github.com/tunahanaliozturk/Veil/discussions
+    about: Ask how to use Veil, or discuss an idea before filing a feature request.

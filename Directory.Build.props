@@ -12,13 +12,15 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <Version>1.0.1</Version>
     <Authors>Moongazing</Authors>
     <Company>Moongazing</Company>
     <Copyright>Copyright (c) Moongazing 2024-$([System.DateTime]::Now.Year)</Copyright>
-    <RepositoryUrl>https://github.com/tunahanaliozturk/Moongazing.Veil</RepositoryUrl>
+    <RepositoryUrl>https://github.com/tunahanaliozturk/Veil</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/tunahanaliozturk/Moongazing.Veil</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/tunahanaliozturk/Veil</PackageProjectUrl>
+    <PackageReleaseNotes>See the changelog: https://github.com/tunahanaliozturk/Veil/blob/master/CHANGELOG.md</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup>

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/tunahanaliozturk/Moongazing.Veil/main/logo.png" alt="Moongazing.Veil" width="128" />
+  <img src="https://raw.githubusercontent.com/tunahanaliozturk/Veil/master/logo.png" alt="Moongazing.Veil" width="128" />
 </p>
 
 <h1 align="center">Moongazing.Veil.Serilog</h1>
@@ -170,4 +170,4 @@ All components are stateless and thread-safe. They add negligible overhead to yo
 
 ## License
 
-[MIT](https://github.com/tunahanaliozturk/Moongazing.Veil/blob/main/LICENSE) -- Copyright (c) Tunahan Ali Ozturk. All rights reserved. See LICENSE for details.
+[MIT](https://github.com/tunahanaliozturk/Veil/blob/master/LICENSE) -- Copyright (c) Tunahan Ali Ozturk. All rights reserved. See LICENSE for details.

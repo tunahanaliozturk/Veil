@@ -13,8 +13,8 @@
   <a href="https://www.nuget.org/packages/Moongazing.Veil"><img src="https://img.shields.io/nuget/v/Moongazing.Veil?style=flat-square&label=NuGet&color=blue" alt="NuGet" /></a>
   <a href="https://www.nuget.org/packages/Moongazing.Veil"><img src="https://img.shields.io/nuget/dt/Moongazing.Veil?style=flat-square&label=Downloads" alt="Downloads" /></a>
   <img src="https://img.shields.io/badge/.NET-8.0%20%7C%209.0%20%7C%2010.0-purple?style=flat-square" alt=".NET 8 / 9 / 10" />
-  <a href="https://github.com/tunahanaliozturk/Moongazing.Veil/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License" /></a>
-  <a href="https://github.com/tunahanaliozturk/Moongazing.Veil/actions"><img src="https://img.shields.io/github/actions/workflow/status/tunahanaliozturk/Veil/ci.yml?style=flat-square&label=Build" alt="Build Status" /></a>
+  <a href="https://github.com/tunahanaliozturk/Veil/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License" /></a>
+  <a href="https://github.com/tunahanaliozturk/Veil/actions"><img src="https://img.shields.io/github/actions/workflow/status/tunahanaliozturk/Veil/ci.yml?style=flat-square&label=Build" alt="Build Status" /></a>
 </p>
 
 ---
@@ -351,49 +351,43 @@ Veil is built for production workloads where masking runs on every request and e
 
 ## Roadmap
 
-### v1.x — Core Masking Engine ✅
+**v1.x — Core masking engine** is shipped: string and object masking, convention-based rules,
+HTTP middleware, Serilog integration, locale support, and the custom pattern API.
 
-| Version | Status | Feature | Details |
-|---|---|---|---|
-| v1.0 | ✅ Done | **String Masking & Object Masking** | `Veil.Mask()`, `Veil.Redact()`, built-in patterns (Email, Phone, CreditCard, IBAN, Token, ApiKey, IPv4, TurkishId), `[Veiled]` attribute, `Veil.MaskObject()` with immutable copy semantics |
-| v1.1 | ✅ Done | **Convention-Based Masking** | Attribute-free masking via `options.Convention()` — match properties by name and apply patterns automatically. Auto-detection engine for unknown input types |
-| v1.2 | ✅ Done | **HTTP Middleware** | `UseVeilRedaction()` middleware for ASP.NET Core — header, JSON body field, and query string redaction with conditional rules |
+**v2.x — Observability & performance** is next: OpenTelemetry span redaction, a compile-time
+source generator, and a BenchmarkDotNet suite.
 
-### v2.x — Logging & Localization ✅
-
-| Version | Status | Feature | Details |
-|---|---|---|---|
-| v2.0 | ✅ Done | **Serilog Integration** | `Destructure.WithVeil()` for automatic object destructuring and `Enrich.WithVeilRedaction()` for message template redaction — zero changes to existing log calls |
-| v2.1 | ✅ Done | **Locale Support** | Region-specific pattern sets: Turkey (TC Kimlik, Vergi No, IBAN TR), Italy (Codice Fiscale, Partita IVA, IBAN IT), EU (GDPR-aware patterns) |
-| v2.2 | ✅ Done | **Custom Pattern API** | `VeilPatternDefinition` — define patterns with custom regex and mask strategy. Full control over detection and output formatting |
-
-### v3.x — Observability & Performance (Planned)
-
-| Version | Status | Feature | Details |
-|---|---|---|---|
-| v3.0 | 🔜 Next | **OpenTelemetry Integration** | Automatic PII redaction in OpenTelemetry span attributes and trace data — keep distributed traces compliant without manual sanitization |
-| v3.1 | 📋 Planned | **Source Generator** | Compile-time object masker using Roslyn source generators — zero reflection overhead, AOT-friendly, ideal for high-throughput scenarios |
-| v3.2 | 📋 Planned | **Benchmark Suite** | Comprehensive benchmarks with BenchmarkDotNet. Performance regression CI gate. Memory allocation optimization for hot paths |
+See [docs/ROADMAP.md](docs/ROADMAP.md) for the full plan, status legend, and release cadence. If
+an item there matters to you, open an issue with the `roadmap` label.
 
 ---
 
 ## Contributing
 
-Contributions are welcome. Please follow these steps:
+Contributions are welcome — new patterns, locales, integrations, docs, and bug fixes alike. Start
+with [CONTRIBUTING.md](CONTRIBUTING.md) for local setup, coding style, and PR conventions, and the
+[Code of Conduct](CODE_OF_CONDUCT.md). For non-trivial changes, please open an issue first.
 
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feature/my-feature`.
-3. Write tests for any new functionality.
-4. Make sure all tests pass: `dotnet test`.
-5. Submit a pull request.
+Found a way for sensitive data to leak through Veil? That's a security issue — please follow
+[SECURITY.md](SECURITY.md) and report it privately.
 
-Please open an issue first to discuss significant changes before starting work.
+---
+
+## More from the Orion family
+
+Veil is part of a set of standalone, production-focused .NET libraries:
+
+- [OrionKey](https://github.com/tunahanaliozturk/OrionKey) — source-generated strongly-typed IDs.
+- [OrionGuard](https://github.com/tunahanaliozturk/OrionGuard) — guard clauses, validation, DDD primitives.
+- [OrionAudit](https://github.com/tunahanaliozturk/OrionAudit) — automatic EF Core change-audit trail.
+- [OrionLock](https://github.com/tunahanaliozturk/OrionLock) — distributed locking with pluggable backends.
+- [OrionPatch](https://github.com/tunahanaliozturk/OrionPatch) — transactional outbox primitive for EF Core.
 
 ---
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/tunahanaliozturk/Moongazing.Veil/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/tunahanaliozturk/Veil/blob/master/LICENSE).
 
 Copyright (c) Moongazing
 

@@ -15,6 +15,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Source generator for compile-time object masking (zero reflection)
 - BenchmarkDotNet suite and performance regression CI gate
 
+See [docs/ROADMAP.md](docs/ROADMAP.md) for the full plan.
+
+---
+
+## [1.0.1] - 2026-06-14
+
+Documentation and repository polish. No public API changes — a drop-in upgrade from `1.0.0`.
+
+### Added
+
+- `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and `SECURITY.md` (responsible disclosure for masking
+  bypasses and data leaks, with a supported-versions table).
+- `.github` templates: issue forms (bug report, feature request), pull-request template, issue
+  template config, `FUNDING.yml`, and Dependabot configuration for NuGet and GitHub Actions.
+- Standalone [`docs/ROADMAP.md`](docs/ROADMAP.md) with status legend, release cadence, and
+  "considered" / "out of scope" sections.
+- "More from the Orion family" cross-links in the README.
+
+### Changed
+
+- Centralized the package version into `Directory.Build.props` and added `PackageReleaseNotes`.
+- Slimmed the README roadmap to a summary that links to `docs/ROADMAP.md`, and pointed the
+  Contributing section at the new community-health files.
+
+### Fixed
+
+- Corrected repository URLs across the README, package readmes, changelog, and project metadata
+  (`tunahanaliozturk/Moongazing.Veil` → `tunahanaliozturk/Veil`, `main` → `master`).
+
 ---
 
 ## [1.0.0] - 2026-04-03
@@ -56,5 +85,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[Unreleased]: https://github.com/tunahanaliozturk/Moongazing.Veil/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/tunahanaliozturk/Moongazing.Veil/releases/tag/v1.0.0
+[Unreleased]: https://github.com/tunahanaliozturk/Veil/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/tunahanaliozturk/Veil/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/tunahanaliozturk/Veil/releases/tag/v1.0.0
